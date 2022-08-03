@@ -1,0 +1,11 @@
+# Deployment Conversao Temperatura.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ConversaoTemperatura
+spec:
+  containers:
+    - name: ConversaoTemperatura
+      image: vitorcostasilva/conversao-temperatura:v2
+      ports:
+        - containerPort: 80
